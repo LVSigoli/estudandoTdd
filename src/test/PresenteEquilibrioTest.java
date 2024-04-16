@@ -17,5 +17,10 @@ public class PresenteEquilibrioTest {
         assertEquals("N", PresenteEquilibrio.verificarPossibilidade(pesos));
     }
 
+    @Test
+    public void testNZero() {
+        int[] pesos = {};
+        assertEquals("S", PresenteEquilibrio.verificarPossibilidade(pesos));
+    }
 
 }
