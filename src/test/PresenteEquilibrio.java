@@ -1,3 +1,5 @@
+package test;
+
 public class PresenteEquilibrio {
 
     public static String verificarPossibilidade(int[] pesos) {
