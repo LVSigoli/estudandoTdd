@@ -2,7 +2,7 @@ package test;
 
 public class PresenteEquilibrio {
 
-    public static String verificarPossibilidade(int[] pesos) {
+    public static String checkPossibilityToBalance(int[] pesos) {
         for (int peso : pesos) {
             if (peso < 0) {
                 throw new IllegalArgumentException("Os pesos não podem ser negativos");
@@ -25,5 +25,13 @@ public class PresenteEquilibrio {
         }
 
         return "S";
+    }
+
+    private static int calcularSoma(int[] array) {
+        int soma = 0;
+        for (int valor : array) {
+            soma += valor;
+        }
+        return soma;
     }
 }
