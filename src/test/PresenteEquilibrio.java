@@ -3,6 +3,8 @@ package test;
 public class PresenteEquilibrio {
 
     public static String verificarPossibilidade(int[] pesos) {
+
+
         int somaA = 0;
         int somaB = 0;
 

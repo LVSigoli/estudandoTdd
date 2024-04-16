@@ -18,9 +18,15 @@ public class PresenteEquilibrioTest {
     }
 
     @Test
-    public void testNZero() {
+    public void WeightisEqualtoZero() {
         int[] pesos = {};
         assertEquals("S", PresenteEquilibrio.verificarPossibilidade(pesos));
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testNegativeWeights() {
+        int[] pesos = {-3, 4, 2};
+        PresenteEquilibrio.verificarPossibilidade(pesos);
     }
 
 }
