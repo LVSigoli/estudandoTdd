@@ -17,4 +17,3 @@ public class PresenteEquilibrioTest {
         assertEquals("N", PresenteEquilibrio.verificarPossibilidade(pesos));
     }
 }
-}
