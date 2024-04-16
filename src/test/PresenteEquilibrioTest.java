@@ -10,4 +10,11 @@ public class PresenteEquilibrioTest {
         int[] pesos = {3, 4, 2};
         assertEquals("S", PresenteEquilibrio.verificarPossibilidade(pesos));
     }
+
+    @Test
+    public void testEquilibrioImpossivel() {
+        int[] pesos = {6, 6};
+        assertEquals("N", PresenteEquilibrio.verificarPossibilidade(pesos));
+    }
+}
 }
